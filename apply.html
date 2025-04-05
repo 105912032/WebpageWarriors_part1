@@ -22,15 +22,56 @@
             </header>
         </section>
         <section id="main">
-            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="form">
                 <legend>Job Application Form</legend>
                 <fieldset>
                     <label for="Job_Ref_Number">Job Reference Number:</label>
                     <!-- 3/04/2025 NEEDING CONFIRMATION ON WHAT IS MEANT BY JOB REFERENCE NUMBER -->
-                    <select id="Job_Ref_Number" name="Job_Ref_Number">
+                    <select type="select" id="Job_Ref_Number" name="Job_Ref_Number">
+                        <option value=""></option> <!-- Empty value so that form displays empty -->
                         <option value=""></option>
                     </select>
-                    <label></label>
+                    <br>
+                    <label for="First_Name">First Name</label> 
+                    <input type="text" id="First_Name" name="First_Name"> <!-- Add 20 alpha character limit -->
+                    <br>
+                    <label for="Last_Name">Last Name</label> 
+                    <input type="text" id="Last_Name" name="Last_Name"> <!-- Add 20 alpha character limit -->
+                    <br>
+                    <label for="DOB">Date of Birth</label>
+                    <input type="date" id="DOB" name="DOB">
+                    <br>
+                    <fieldset id="Gender">
+                        <legend>Gender</legend>
+                        <input type="radio" id="Male">
+                        <label for="Male">Male</label>
+
+                        <input type="radio" id="Female">
+                        <label for="Female">Female</label>
+
+                        <input type="radio" id="PNS">
+                        <label for="PNS">Prefer not to say</label>
+                        </input>
+                    </fieldset>
+                    <br>
+                    <label for="Street_Address">Street Address</label>
+                    <input type="text" id="Street_Address"> <!-- Add 40 Character Limit -->
+                    <br>
+                    <label for="Suburb_Town">Suburb/Town</label>
+                    <input type="text" id="Suburb_Town"> <!-- Add 40 Character Limit -->
+                    <br>
+                    <label for="State">State</label>
+                    <select id="State">
+                        <option value=" "> </option> <!-- Empty Value so that form displays empty -->
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
                 </fieldset>
             </form>
         </section>
