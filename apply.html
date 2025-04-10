@@ -34,10 +34,10 @@
                     </select>
                     <br>
                     <label for="First_Name">First Name</label> 
-                    <input type="text" id="First_Name" name="First_Name" required> <!-- Add 20 alpha character limit -->
+                    <input type="text" id="First_Name" name="First_Name" pattern="[A-Za-z]{1,20}" required> <!-- Add 20 alpha character limit -->
                     <br>
                     <label for="Last_Name">Last Name</label> 
-                    <input type="text" id="Last_Name" name="Last_Name" required> <!-- Add 20 alpha character limit -->
+                    <input type="text" id="Last_Name" name="Last_Name" pattern="[A-Za-z]{1,20}" required> <!-- Add 20 alpha character limit -->
                     <br>
                     <label for="DOB">Date of Birth</label>
                     <input type="date" id="DOB" name="DOB" required>
@@ -83,6 +83,7 @@
                     <label for="Phone_Number">Phone Number</label>
                     <input type="text" id="Phone_Number" name="Phone_Number" required>
                     <br>
+                    <br>
                     <fieldset>
                         <legend>Required Technical List</legend>
                         <label for="Programming_Experience">
@@ -102,6 +103,7 @@
                     <label for="Other_Skills">Other Skills:</label>
                     <textarea id="Other_Skills" name="Other_Skills" rows="4" cols="30"></textarea>
                     <br>
+                    <input type="submit" value="submit"
                 </fieldset>
             </form>
         </section>
