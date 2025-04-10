@@ -27,22 +27,22 @@
                 <legend>Job Application Form</legend>
                 <fieldset>
                     <label for="Job_Ref_Number">Job Reference Number:</label>
-                    <select type="select" id="Job_Ref_Number" name="Job_Ref_Number">
+                    <select type="select" id="Job_Ref_Number" name="Job_Ref_Number" required>
                         <option value=""></option> 
                         <option value="Support_Technician">IT Support Technician</option>
                         <option value="Web_Designer">Web Designer</option>
                     </select>
                     <br>
                     <label for="First_Name">First Name</label> 
-                    <input type="text" id="First_Name" name="First_Name"> <!-- Add 20 alpha character limit -->
+                    <input type="text" id="First_Name" name="First_Name" required> <!-- Add 20 alpha character limit -->
                     <br>
                     <label for="Last_Name">Last Name</label> 
-                    <input type="text" id="Last_Name" name="Last_Name"> <!-- Add 20 alpha character limit -->
+                    <input type="text" id="Last_Name" name="Last_Name" required> <!-- Add 20 alpha character limit -->
                     <br>
                     <label for="DOB">Date of Birth</label>
-                    <input type="date" id="DOB" name="DOB">
+                    <input type="date" id="DOB" name="DOB" required>
                     <br>
-                    <fieldset id="Gender">
+                    <fieldset id="Gender" >
                         <legend>Gender</legend>
                         <input type="radio" id="Male">
                         <label for="Male">Male</label>
@@ -56,13 +56,13 @@
                     </fieldset>
                     <br>
                     <label for="Street_Address">Street Address</label>
-                    <input type="text" id="Street_Address"> <!-- Add 40 Character Limit -->
+                    <input type="text" id="Street_Address" required> <!-- Add 40 Character Limit -->
                     <br>
                     <label for="Suburb_Town">Suburb/Town</label>
-                    <input type="text" id="Suburb_Town"> <!-- Add 40 Character Limit -->
+                    <input type="text" id="Suburb_Town" required> <!-- Add 40 Character Limit -->
                     <br>
                     <label for="State">State</label>
-                    <select id="State">
+                    <select id="State" required>
                         <option value=" "> </option> <!-- Empty Value so that form displays empty -->
                         <option value="VIC">VIC</option>
                         <option value="NSW">NSW</option>
@@ -75,26 +75,26 @@
                     </select>
                     <br>
                     <label for="Postcode">Postcode</label>
-                    <input type="text" id="Postcode" name="Postcode">
+                    <input type="text" id="Postcode" name="Postcode" required>
                     <br>
                     <label for="Email">Email</label>
-                    <input type="text" id="Email" name="Email">
+                    <input type="text" id="Email" name="Email" required>
                     <br>
                     <label for="Phone_Number">Phone Number</label>
-                    <input type="text" id="Phone_Number" name="Phone_Number">
+                    <input type="text" id="Phone_Number" name="Phone_Number" required>
                     <br>
                     <fieldset>
                         <legend>Required Technical List</legend>
                         <label for="Programming_Experience">
-                            <input type="checkbox" id="Programming_Experience" name="Programming_Experience">
+                            <input type="checkbox" id="Programming_Experience" name="Programming_Experience" required>
                             Experience in HTML and CSS</label>
                         
                         <label for="Customer_Service">
-                            <input type="checkbox" id="Customer_Service" name="Customer_Service">
+                            <input type="checkbox" id="Customer_Service" name="Customer_Service" required>
                             Customer Service Skills</label>
                         
                         <label for="Team_Projects">
-                            <input type="checkbox" id="Team_Projects" name="Team_Projects">
+                            <input type="checkbox" id="Team_Projects" name="Team_Projects" required>
                             Experience in Team-Based Work
                         </label>
                     </fieldset>
