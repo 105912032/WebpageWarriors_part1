@@ -175,6 +175,8 @@ form button:hover,
 form input[type="submit"]:hover {
     background-color: #3a3bb2;
 }
+form input:focus{
+    border: 2px solidcolor #3a3bb2}
 
 /* Responsive Design */
 @media (max-width: 600px) {
