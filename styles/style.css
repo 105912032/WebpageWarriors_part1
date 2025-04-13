@@ -155,6 +155,27 @@ fieldset#Gender {
     background-color: #f9f9f9;
 }
 
+figure img{
+    border: 2px solid #4444aa;
+    border-radius: 6px;
+}
+
+figure {
+    float: right;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+table{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 20px;
+    align-items: center;
+}
+
 #Gender input[type="radio"] {
     margin-right: 6px;
 }
